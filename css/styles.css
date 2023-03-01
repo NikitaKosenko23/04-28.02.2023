@@ -366,6 +366,17 @@ body {
 .social-list-icon {
   fill: #f4f4fd;
 }
+
+.social-list-item > .social-list-link:hover,
+.social-list-item > .social-list-link:focus {
+  background-color: #f4f4fd;
+}
+
+.social-list-item > .social-list-link:hover .social-list-icon,
+.social-list-item > .social-list-link:focus .social-list-icon {
+  fill: #4d5ae5;
+}
+
 /* ===========================================Customers============== */
 
 .section-customers {
@@ -390,6 +401,16 @@ body {
 }
 .company-icon {
   fill: #8e8f99;
+}
+
+.customer-list > .customer-list-item:hover .company-icon,
+.customer-list > .customer-list-item:focus .company-icon {
+  fill: #4d5ae5;
+}
+
+.customer-list > .customer-list-item:hover,
+.customer-list > .customer-list-item:focus {
+  border: 1px solid #4d5ae5;
 }
 
 /* =================================================Potfolio list + унаследование свойств у пэшэк в ссылках а*/
@@ -437,7 +458,8 @@ body {
   border-right: 1px solid var(--studio-logo-color);
 }
 
-.portfolio-card:hover {
+.portfolio-card:hover,
+.portfolio-card:focus {
   border: 1px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -494,6 +516,16 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-item > .social-list-link-footer:hover,
+.social-list-item > .social-list-link-footer:focus {
+  background-color: #f4f4fd;
+}
+
+.social-list-item > .social-list-link-footer:hover .social-list-icon,
+.social-list-item > .social-list-link-footer:focus .social-list-icon {
+  fill: #2e2f42;
 }
 
 /* =================================================Фильтры для портфолио (КНОПКИ)*/
