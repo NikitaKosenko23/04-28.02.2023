@@ -195,6 +195,7 @@ body {
 .contacts a:focus {
   color: var(--active-color);
 }
+
 /* ======================================= /HEADER================================ */
 
 /* ==================================Hero Block + title h1=========================*/
@@ -209,7 +210,7 @@ body {
     ),
     url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: 1440px;
+  width: 1440px;
   background-position: center;
 }
 
@@ -271,6 +272,9 @@ body {
 .advantages-list {
   display: flex;
 }
+.advantages-list-item {
+  flex-basis: calc(100% / 4 - 24px);
+}
 .advantages-list-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -308,6 +312,14 @@ body {
 }
 .work-list-item {
   flex-basis: calc((100% - 48px) / 3);
+  border: 1px solid #e7e9fc;
+  background-blend-mode: soft-light, normal;
+  background: linear-gradient(
+      0deg,
+      rgba(77, 90, 229, 0.1),
+      rgba(77, 90, 229, 0.1)
+    ),
+    url(2225.jpg);
 }
 
 .work-list-item:not(:last-child) {
@@ -356,6 +368,10 @@ body {
   gap: 24px;
 }
 
+.social-list-item {
+  flex-basis: calc(100% / 4 - 24px);
+}
+
 .social-list-item > .social-list-link {
   display: flex;
   justify-content: center;
@@ -371,12 +387,12 @@ body {
 
 .social-list-item > .social-list-link:hover,
 .social-list-item > .social-list-link:focus {
-  background-color: #f4f4fd;
+  background-color: #404bbf;
 }
 
 .social-list-item > .social-list-link:hover .social-list-icon,
 .social-list-item > .social-list-link:focus .social-list-icon {
-  fill: #4d5ae5;
+  fill: #f4f4fd;
 }
 
 /* ===========================================Customers============== */
@@ -390,7 +406,9 @@ body {
   display: flex;
   gap: 24px;
 }
-
+.customer-list-item {
+  flex-basis: calc(100% / 6 - 24px);
+}
 .customer-list > .customer-list-item {
   display: flex;
   justify-content: center;
@@ -399,7 +417,6 @@ body {
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  background-color: none;
 }
 .company-icon {
   fill: #8e8f99;
@@ -407,12 +424,12 @@ body {
 
 .customer-list > .customer-list-item:hover .company-icon,
 .customer-list > .customer-list-item:focus .company-icon {
-  fill: #4d5ae5;
+  fill: #404bbf;
 }
 
 .customer-list > .customer-list-item:hover,
 .customer-list > .customer-list-item:focus {
-  border: 1px solid #4d5ae5;
+  border: 1px solid #404bbf;
 }
 
 /* =================================================Potfolio list + унаследование свойств у пэшэк в ссылках а*/
@@ -510,7 +527,11 @@ body {
   gap: 16px;
 }
 
-.social-list-item > .social-list-link-footer {
+.social-list-item-footer {
+  flex-basis: calc(100% / 4 - 16px);
+}
+
+.social-list-item-footer > .social-list-link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,14 +541,14 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-list-item > .social-list-link-footer:hover,
-.social-list-item > .social-list-link-footer:focus {
-  background-color: #f4f4fd;
+.social-list-item-footer > .social-list-link-footer:hover,
+.social-list-item-footer > .social-list-link-footer:focus {
+  background-color: #31d0aa;
 }
 
-.social-list-item > .social-list-link-footer:hover .social-list-icon,
-.social-list-item > .social-list-link-footer:focus .social-list-icon {
-  fill: #2e2f42;
+.social-list-item-footer > .social-list-link-footer:hover .social-list-icon,
+.social-list-item-footer > .social-list-link-footer:focus .social-list-icon {
+  fill: #f4f4fd;
 }
 
 /* =================================================Фильтры для портфолио (КНОПКИ)*/
