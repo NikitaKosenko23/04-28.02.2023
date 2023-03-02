@@ -409,7 +409,7 @@ body {
 .customer-list-item {
   flex-basis: calc(100% / 6 - 24px);
 }
-.customer-list > .customer-list-item {
+.customer-list-item > .customer-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,13 +422,13 @@ body {
   fill: #8e8f99;
 }
 
-.customer-list > .customer-list-item:hover .company-icon,
-.customer-list > .customer-list-item:focus .company-icon {
+.customer-list-item > .customer-list-link:hover .company-icon,
+.customer-list-item > .customer-list-link:focus .company-icon {
   fill: #404bbf;
 }
 
-.customer-list > .customer-list-item:hover,
-.customer-list > .customer-list-item:focus {
+.customer-list-item > .customer-list-link:hover,
+.customer-list-item > .customer-list-link:focus {
   border: 1px solid #404bbf;
 }
 
@@ -477,9 +477,10 @@ body {
   border-right: 1px solid var(--studio-logo-color);
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
-  border: 1px solid #f4f4fd;
+.portfolio-card-link:hover > .potfolio-card-border {
+  /* border-left: 1px solid #f4f4fd;
+  border-right: 1px solid #f4f4fd;
+  border-bottom: 1px solid #f4f4fd; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -496,6 +497,7 @@ body {
 
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 .footer-part-one {
   margin-right: 120px;
